@@ -14,6 +14,7 @@
 		7EDC16B91D6638A4003693B5 /* WheelieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC16B81D6638A4003693B5 /* WheelieTests.swift */; };
 		7EDC16C41D6638A4003693B5 /* WheelieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC16C31D6638A4003693B5 /* WheelieUITests.swift */; };
 		7EDC16D61D6639D8003693B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC16D51D6639D8003693B5 /* MapViewController.swift */; };
+		7EDC16DC1D663BBD003693B5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC16DB1D663BBD003693B5 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7EDC16C31D6638A4003693B5 /* WheelieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelieUITests.swift; sourceTree = "<group>"; };
 		7EDC16C51D6638A4003693B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDC16D51D6639D8003693B5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7EDC16DB1D663BBD003693B5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		7EDC16A21D6638A3003693B5 /* Wheelie */ = {
 			isa = PBXGroup;
 			children = (
+				7EDC16DA1D663BB3003693B5 /* Extensions */,
 				7EDC16D91D663B53003693B5 /* Resources */,
 				7EDC16D81D663B4E003693B5 /* Storyboards */,
 				7EDC16D71D663B46003693B5 /* View Controllers */,
@@ -147,6 +150,14 @@
 				7EDC16AF1D6638A3003693B5 /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		7EDC16DA1D663BB3003693B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7EDC16DB1D663BBD003693B5 /* UIViewExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDC16DC1D663BBD003693B5 /* UIViewExtension.swift in Sources */,
 				7EDC16A41D6638A3003693B5 /* AppDelegate.swift in Sources */,
 				7EDC16D61D6639D8003693B5 /* MapViewController.swift in Sources */,
 			);

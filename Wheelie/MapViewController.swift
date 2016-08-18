@@ -20,6 +20,14 @@ class MapViewController: UIViewController {
     }
     
     func setupNavbar() {
+        
+        // Add image icon to title
+        let logo = UIImageView(image: UIImage(named: "ic_logo"))
+        logo.frame.size.height = 40
+        logo.contentMode = .ScaleAspectFit
+        
+        self.navigationItem.titleView = logo
+        
         if let navbar = self.navigationController?.navigationBar {
             
             // Change color
