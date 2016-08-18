@@ -15,6 +15,7 @@
 		7EDC16C41D6638A4003693B5 /* WheelieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC16C31D6638A4003693B5 /* WheelieUITests.swift */; };
 		7EDC16D61D6639D8003693B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC16D51D6639D8003693B5 /* MapViewController.swift */; };
 		7EDC16DC1D663BBD003693B5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC16DB1D663BBD003693B5 /* UIViewExtension.swift */; };
+		7EDC16DE1D664627003693B5 /* RideSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC16DD1D664627003693B5 /* RideSettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7EDC16C51D6638A4003693B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDC16D51D6639D8003693B5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7EDC16DB1D663BBD003693B5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		7EDC16DD1D664627003693B5 /* RideSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideSettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				7EDC16D51D6639D8003693B5 /* MapViewController.swift */,
+				7EDC16DD1D664627003693B5 /* RideSettingsTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDC16DE1D664627003693B5 /* RideSettingsTableViewController.swift in Sources */,
 				7EDC16DC1D663BBD003693B5 /* UIViewExtension.swift in Sources */,
 				7EDC16A41D6638A3003693B5 /* AppDelegate.swift in Sources */,
 				7EDC16D61D6639D8003693B5 /* MapViewController.swift in Sources */,
