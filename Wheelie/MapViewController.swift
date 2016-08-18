@@ -9,9 +9,12 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var topInfoConstraint: NSLayoutConstraint!
+    @IBOutlet weak var bottomInfoConstraint: NSLayoutConstraint!
+    
     
     lazy var locationManager: CLLocationManager = {
         var manager = CLLocationManager()
@@ -24,7 +27,29 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
 
         setupNavbar()
+        
+        mapView.delegate = self
         locationManager.requestWhenInUseAuthorization()
+    }
+    
+    func mapView(mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+        
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(0.25) {
+            self.topInfoConstraint.constant = -40
+            self.bottomInfoConstraint.constant = -40
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(0.25) {
+            self.topInfoConstraint.constant = 12
+            self.bottomInfoConstraint.constant = 12
+            self.view.layoutIfNeeded()
+        }
     }
     
     func setupNavbar() {

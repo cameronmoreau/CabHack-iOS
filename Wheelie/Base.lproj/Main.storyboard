@@ -224,7 +224,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="nfD-c9-JOH"/>
                     <connections>
+                        <outlet property="bottomInfoConstraint" destination="8iA-zQ-hys" id="7FW-6m-wb2"/>
                         <outlet property="mapView" destination="2KZ-gH-1cN" id="0IS-Sg-8gU"/>
+                        <outlet property="topInfoConstraint" destination="v5l-OY-chV" id="8hO-Qu-aBN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
