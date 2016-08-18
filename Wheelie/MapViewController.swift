@@ -9,14 +9,22 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    
+    lazy var locationManager: CLLocationManager = {
+        var manager = CLLocationManager()
+        manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        manager.delegate = self
+        return manager
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupNavbar()
+        locationManager.requestWhenInUseAuthorization()
     }
     
     func setupNavbar() {
