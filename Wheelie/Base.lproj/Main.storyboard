@@ -132,15 +132,89 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ev-uh-epJ">
+                                <rect key="frame" x="12" y="475" width="576" height="113"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nva-Av-Uzn">
+                                        <rect key="frame" x="12" y="56" width="552" height="1"/>
+                                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="sLH-zn-8ag"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jn-Sq-Yte">
+                                        <rect key="frame" x="12" y="65" width="552" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.54117647058823526" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5G5-P5-0Ky"/>
+                                        </constraints>
+                                        <state key="normal" title="Pick Me Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llw-xR-M6o">
+                                        <rect key="frame" x="444" y="8" width="120" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.54117647059999996" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="QIv-US-AFS"/>
+                                            <constraint firstAttribute="height" constant="40" id="VYe-3k-Rq1"/>
+                                        </constraints>
+                                        <state key="normal" title="Ride Settings">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HZ-f8-s0g">
+                                        <rect key="frame" x="12" y="32" width="60" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Wait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJJ-o6-bcY">
+                                        <rect key="frame" x="12" y="8" width="120" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nva-Av-Uzn" firstAttribute="leading" secondItem="8ev-uh-epJ" secondAttribute="leading" constant="12" id="1VH-Xh-mCt"/>
+                                    <constraint firstAttribute="trailing" secondItem="4jn-Sq-Yte" secondAttribute="trailing" constant="12" id="6Go-4S-aLu"/>
+                                    <constraint firstItem="UJJ-o6-bcY" firstAttribute="top" secondItem="8ev-uh-epJ" secondAttribute="top" constant="8" id="Aek-rl-KuA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Llw-xR-M6o" secondAttribute="trailing" constant="12" id="Aff-dg-uFM"/>
+                                    <constraint firstItem="nva-Av-Uzn" firstAttribute="top" secondItem="Llw-xR-M6o" secondAttribute="bottom" constant="8" id="ERM-Qb-Rkg"/>
+                                    <constraint firstItem="4jn-Sq-Yte" firstAttribute="leading" secondItem="8ev-uh-epJ" secondAttribute="leading" constant="12" id="NiA-lZ-t8e"/>
+                                    <constraint firstAttribute="bottom" secondItem="4jn-Sq-Yte" secondAttribute="bottom" constant="8" id="O4R-pg-dBn"/>
+                                    <constraint firstAttribute="trailing" secondItem="nva-Av-Uzn" secondAttribute="trailing" constant="12" id="OkP-4f-bxi"/>
+                                    <constraint firstItem="2HZ-f8-s0g" firstAttribute="leading" secondItem="8ev-uh-epJ" secondAttribute="leading" constant="12" id="W2R-e4-Edy"/>
+                                    <constraint firstItem="4jn-Sq-Yte" firstAttribute="top" secondItem="nva-Av-Uzn" secondAttribute="bottom" constant="8" id="cJa-nb-qeU"/>
+                                    <constraint firstItem="Llw-xR-M6o" firstAttribute="top" secondItem="8ev-uh-epJ" secondAttribute="top" constant="8" id="n34-nb-5Ip"/>
+                                    <constraint firstItem="UJJ-o6-bcY" firstAttribute="leading" secondItem="8ev-uh-epJ" secondAttribute="leading" constant="12" id="pCR-Ox-cva"/>
+                                    <constraint firstItem="nva-Av-Uzn" firstAttribute="top" secondItem="2HZ-f8-s0g" secondAttribute="bottom" constant="8" id="vgg-Xn-OWH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2KZ-gH-1cN" secondAttribute="bottom" id="26R-ql-DWo"/>
                             <constraint firstItem="2KZ-gH-1cN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5xF-ai-vTk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8ev-uh-epJ" secondAttribute="bottom" constant="12" id="8iA-zQ-hys"/>
                             <constraint firstItem="rk3-0M-FyI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="9CH-UN-y2P"/>
                             <constraint firstAttribute="trailing" secondItem="2KZ-gH-1cN" secondAttribute="trailing" id="D4v-TE-F76"/>
+                            <constraint firstAttribute="trailing" secondItem="8ev-uh-epJ" secondAttribute="trailing" constant="12" id="Rcv-pc-hWL"/>
                             <constraint firstItem="2KZ-gH-1cN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SZB-mf-Esv"/>
                             <constraint firstAttribute="trailing" secondItem="rk3-0M-FyI" secondAttribute="trailing" constant="12" id="TJH-wX-yBO"/>
+                            <constraint firstItem="8ev-uh-epJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="grU-VW-r5d"/>
                             <constraint firstItem="rk3-0M-FyI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="v5l-OY-chV"/>
                         </constraints>
                     </view>
